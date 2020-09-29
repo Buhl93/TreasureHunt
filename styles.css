@@ -8,14 +8,14 @@
 }
 
 body {
-  background-color: black;
+  background-color: blue;
 }
 
 .content {
   width: 33vw;
   height: 100vh;
   margin: auto;
-  background-image: url("../img/parchment-bkg.jpg");
+  background-image: url("./img/parchment-bkg.jpg");
 }
 
 .content nav ul {
