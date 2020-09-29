@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: black;
   font-family: "Indie Flower", cursive;
 }
@@ -15,7 +15,7 @@ body {
   width: 33vw;
   height: 100vh;
   margin: auto;
-  background-image: url("../img/parchment-bkg.jpg");
+  background-image: url("./img/parchment-bkg.jpg");
 }
 
 .content nav ul {
@@ -24,8 +24,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   list-style: none;
 }
 
@@ -47,7 +47,7 @@ body {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .content .first-page .input1,
@@ -60,11 +60,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .content .first-page .input1 .puzzle1,
@@ -119,7 +119,7 @@ body {
   top: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -134,7 +134,7 @@ body {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .content .third-page .game-icons {
@@ -151,8 +151,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .content .third-page .number-input .number-input1,
@@ -194,14 +194,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 5rem;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -225,7 +225,7 @@ body {
   top: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -245,12 +245,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .input1 {
   -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 .greyedOut {
   -webkit-animation: greyedOut 0.5s ease forwards;
-          animation: greyedOut 0.5s ease forwards;
+  animation: greyedOut 0.5s ease forwards;
 }
 
 .invisibleStart {
@@ -260,20 +260,20 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .invisible {
   -webkit-animation: fadeOut 0.2s ease forwards;
-          animation: fadeOut 0.2s ease forwards;
+  animation: fadeOut 0.2s ease forwards;
   pointer-events: none;
 }
 
 .visible {
   -webkit-animation: fadeIn 0.5s ease forwards;
-          animation: fadeIn 0.5s ease forwards;
+  animation: fadeIn 0.5s ease forwards;
   pointer-events: cursor;
   z-index: 1;
 }
 
 .answer {
   -webkit-animation: fadeInAnswer 4s ease forwards;
-          animation: fadeInAnswer 4s ease forwards;
+  animation: fadeInAnswer 4s ease forwards;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1000px) {
@@ -340,12 +340,12 @@ input[type="number"]::-webkit-outer-spin-button {
   0% {
     opacity: 0;
     -webkit-transform: translate(-50%, 3%);
-            transform: translate(-50%, 3%);
+    transform: translate(-50%, 3%);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 }
 
@@ -353,12 +353,12 @@ input[type="number"]::-webkit-outer-spin-button {
   0% {
     opacity: 0;
     -webkit-transform: translate(-50%, 3%);
-            transform: translate(-50%, 3%);
+    transform: translate(-50%, 3%);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 }
 /*# sourceMappingURL=styles.css.map */
