@@ -1,0 +1,225 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Indie Flower", cursive;
+}
+
+body {
+  background-color: black;
+}
+
+.content {
+  width: 33vw;
+  height: 100vh;
+  margin: auto;
+  background-image: url("../img/parchment-bkg.jpg");
+  nav {
+    ul {
+      padding-top: 70px;
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 4rem;
+          outline: none;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          .first-link,
+          .second-link,
+          .third-link {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .first-page,
+  .second-page {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    .input1,
+    .input2 {
+      margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .puzzle1,
+      .puzzle2 {
+        font-size: 8rem;
+        cursor: default;
+      }
+      .text-input1,
+      .text-input2 {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 100px;
+        font-size: 7rem;
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: 5px solid black;
+        text-align: center;
+      }
+      .submit1,
+      .submit2 {
+        font-size: 5rem;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+    }
+
+    .output1,
+    .output2 {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      span {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  .third-page {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    .game-icons {
+      margin-top: 25%;
+      i {
+        font-size: 5rem;
+        margin: 0 30px;
+      }
+    }
+    .number-input {
+      display: flex;
+      justify-content: space-evenly;
+      .number-input1,
+      .number-input2,
+      .number-input3 {
+        margin: 0 10px;
+        .wheel-number1,
+        .wheel-number2,
+        .wheel-number3 {
+          width: 100px;
+          text-align: center;
+        }
+        span {
+          font-size: 9rem;
+        }
+        .arrows1,
+        .arrows2,
+        .arrows3 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 5rem;
+          outline: none;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          i {
+            cursor: pointer;
+            margin-bottom: 80px;
+          }
+        }
+      }
+    }
+    .output3 {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      p {
+        width: 800px;
+      }
+      span {
+        font-size: 4.1rem;
+      }
+    }
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input1 {
+  animation: fadeIn 2s;
+}
+
+.greyedOut {
+  animation: greyedOut 0.5s ease forwards;
+}
+
+.invisibleStart {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.invisible {
+  animation: fadeOut 0.2s ease forwards;
+  pointer-events: none;
+}
+
+.visible {
+  animation: fadeIn 0.5s ease forwards;
+  pointer-events: cursor;
+  z-index: 1;
+}
+
+.answer {
+  animation: fadeInAnswer 4s ease forwards;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  .content {
+    width: 100vw;
+  }
+}
+
+@keyframes greyedOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnswer {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
