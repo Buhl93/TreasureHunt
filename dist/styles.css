@@ -359,7 +359,7 @@ input[type="number"]::-webkit-outer-spin-button {
 @media screen and (min-width: 320px) and (max-width: 1000px) {
   .content {
     width: 100vw;
-    height: 95vh;
+    height: calc(100vh - 20px);
   }
   .content nav ul {
     padding-top: 100px;
