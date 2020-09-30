@@ -276,12 +276,6 @@ input[type="number"]::-webkit-outer-spin-button {
           animation: fadeInAnswer 4s ease forwards;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1000px) {
-  .content {
-    width: 100vw;
-  }
-}
-
 @-webkit-keyframes greyedOut {
   0% {
     opacity: 1;
@@ -359,6 +353,118 @@ input[type="number"]::-webkit-outer-spin-button {
     opacity: 1;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  .content {
+    width: 100vw;
+  }
+  .content nav ul {
+    padding-top: 100px;
+  }
+  .content nav ul li a {
+    font-size: 6rem;
+  }
+  .content .first-page .input1,
+  .content .first-page .input2,
+  .content .second-page .input1,
+  .content .second-page .input2 {
+    margin-top: 15%;
+  }
+  .content .first-page .input1 .puzzle1,
+  .content .first-page .input1 .puzzle2,
+  .content .first-page .input2 .puzzle1,
+  .content .first-page .input2 .puzzle2,
+  .content .second-page .input1 .puzzle1,
+  .content .second-page .input1 .puzzle2,
+  .content .second-page .input2 .puzzle1,
+  .content .second-page .input2 .puzzle2 {
+    font-size: 15rem;
+    cursor: default;
+  }
+  .content .first-page .input1 .text-input1,
+  .content .first-page .input1 .text-input2,
+  .content .first-page .input2 .text-input1,
+  .content .first-page .input2 .text-input2,
+  .content .second-page .input1 .text-input1,
+  .content .second-page .input1 .text-input2,
+  .content .second-page .input2 .text-input1,
+  .content .second-page .input2 .text-input2 {
+    width: 80vw;
+    margin-bottom: 200px;
+    font-size: 7rem;
+  }
+  .content .first-page .input1 .submit1,
+  .content .first-page .input1 .submit2,
+  .content .first-page .input2 .submit1,
+  .content .first-page .input2 .submit2,
+  .content .second-page .input1 .submit1,
+  .content .second-page .input1 .submit2,
+  .content .second-page .input2 .submit1,
+  .content .second-page .input2 .submit2 {
+    font-size: 9rem;
+  }
+  .content .first-page .output1,
+  .content .first-page .output2,
+  .content .second-page .output1,
+  .content .second-page .output2 {
+    top: 10%;
+  }
+  .content .first-page .output1 span,
+  .content .first-page .output2 span,
+  .content .second-page .output1 span,
+  .content .second-page .output2 span {
+    font-size: 10rem;
+  }
+  .content .third-page .game-icons {
+    margin-top: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100vw;
+  }
+  .content .third-page .game-icons i {
+    font-size: 10rem;
+    margin: 0 30px;
+  }
+  .content .third-page .number-input .number-input1,
+  .content .third-page .number-input .number-input2,
+  .content .third-page .number-input .number-input3 {
+    margin: 0 10px;
+  }
+  .content .third-page .number-input .number-input1 .wheel-number1,
+  .content .third-page .number-input .number-input1 .wheel-number2,
+  .content .third-page .number-input .number-input1 .wheel-number3,
+  .content .third-page .number-input .number-input2 .wheel-number1,
+  .content .third-page .number-input .number-input2 .wheel-number2,
+  .content .third-page .number-input .number-input2 .wheel-number3,
+  .content .third-page .number-input .number-input3 .wheel-number1,
+  .content .third-page .number-input .number-input3 .wheel-number2,
+  .content .third-page .number-input .number-input3 .wheel-number3 {
+    width: 100px;
+  }
+  .content .third-page .number-input .number-input1 span,
+  .content .third-page .number-input .number-input2 span,
+  .content .third-page .number-input .number-input3 span {
+    font-size: 20rem;
+  }
+  .content .third-page .number-input .number-input1 .arrows1,
+  .content .third-page .number-input .number-input1 .arrows2,
+  .content .third-page .number-input .number-input1 .arrows3,
+  .content .third-page .number-input .number-input2 .arrows1,
+  .content .third-page .number-input .number-input2 .arrows2,
+  .content .third-page .number-input .number-input2 .arrows3,
+  .content .third-page .number-input .number-input3 .arrows1,
+  .content .third-page .number-input .number-input3 .arrows2,
+  .content .third-page .number-input .number-input3 .arrows3 {
+    font-size: 8rem;
+  }
+  .content .third-page .output3 span {
+    font-size: 8rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
