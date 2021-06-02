@@ -9,6 +9,7 @@
 
 body {
   background-color: black;
+  overflow-y: hidden;
 }
 
 .content {
@@ -468,4 +469,27 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 8rem;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+
+@media screen and (min-width: 1000px) and (max-width: 2000px) {
+  .content nav ul li a {
+    font-size: 3rem;
+  }
+
+  .content .first-page .input1 .text-input1,
+  .content .first-page .input1 .text-input2,
+  .content .first-page .input2 .text-input1,
+  .content .first-page .input2 .text-input2,
+  .content .second-page .input1 .text-input1,
+  .content .second-page .input1 .text-input2,
+  .content .second-page .input2 .text-input1,
+  .content .second-page .input2 .text-input2 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+  }
+
+  .content .third-page .number-input .number-input1 span,
+  .content .third-page .number-input .number-input2 span,
+  .content .third-page .number-input .number-input3 span {
+  font-size: 6rem;
+}
+}
